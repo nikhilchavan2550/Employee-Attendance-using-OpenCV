@@ -6,11 +6,12 @@
 
 /* Custom styles for the navbar */
 .custom-navbar {
-    background-color: rgba(194, 217, 255, 0.6); /* Semi-transparent white background */
+    background-color: rgba(173, 216, 230, 0.6); /* Light blue semi-transparent background */
     border-radius: 30px; /* Capsule shape */
     margin-top: 10px; /* Margin from the top */
     margin-left: 20px; /* Margin from the left */
     margin-right: 20px; /* Margin from the right */
+    padding: 15px; /* Add padding for inner spacing */
 }
 
 .custom-navbar .navbar-brand {
@@ -30,7 +31,7 @@
 }
 
 .custom-navbar .nav-link:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a soft shadow on hover */
 }
 
 .custom-navbar .navbar-text {
@@ -38,13 +39,15 @@
 }
 
 .custom-navbar .btn {
-    background-color: #6c3483; /* Dark purple background for the button */
+    background-color: #87cefa; /* Light blue background for the button */
     color: white; /* Button text color */
     border: none;
+    border-radius: 20px; /* Rounded corners */
+    padding: 10px 20px; /* Add padding for better spacing */
 }
 
 .custom-navbar .btn:hover {
-    background-color: #5b2a6e; /* Dark purple background on hover */
+    background-color: #4682b4; /* Slightly darker blue on hover */
 }
 
 /* Additional CSS to clear floats */
@@ -54,43 +57,103 @@
     display: table;
 }
 
+#Abutton {
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 250px;
+    padding: 15px; /* Increase padding for a larger button */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #4682b4; /* Light blue text */
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    outline: none;
+    background-color: #f0f8ff; /* Very light blue background */
+}
 
-    #Abutton{
-        font-size: 24px;
-        font-weight: bold;
-        border-radius: 10px;
-        width:250px;
-        padding: 10px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        color: #17139e;
-        box-shadow: 15px 15px 19px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease 0s;
-        outline: none;
-    }
-    #Abutton:hover{
-        color: white;
-        background-color: #17139e;
-        box-shadow: 0px 15px 20px #6864d7;
-        transform: translateY(-7px);
-    }
+#Abutton:hover {
+    color: white;
+    background-color: #4682b4; /* Slightly darker blue on hover */
+    box-shadow: 0px 10px 15px #87cefa;
+    transform: translateY(-5px);
+}
 
-    #add{
-        font-size: 18px;
-        font-weight: bold;
-        border-radius: 10px;
-        width:200px;
-        padding: 10px;
-        margin-top: 15px;
-        margin-bottom: 1px;
-        color: #17139e;
-        box-shadow: 15px 15px 19px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease 0s;
-        outline: none;
-    }
-    #add:hover{
-        color: white;
-        background-color: #17139e;
-        box-shadow: 0px 15px 20px #6864d7;
-        transform: translateY(-7px);
-    }
+#add {
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 200px;
+    padding: 12px; /* Increase padding for consistency */
+    margin-top: 15px;
+    margin-bottom: 15px; /* Add margin for better spacing */
+    color: #4682b4; /* Light blue text */
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    outline: none;
+    background-color: #f0f8ff; /* Very light blue background */
+}
+
+#add:hover {
+    color: white;
+    background-color: #4682b4; /* Slightly darker blue on hover */
+    box-shadow: 0px 10px 15px #87cefa;
+    transform: translateY(-5px);
+}
+
+/* Updated header styles for "Add New User" and "Today's Attendance" */
+.section-header {
+    border-radius: 10px; /* Adjust for uniform design */
+    background-color: black; /* Changed to black */
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0; /* Add spacing above and below */
+}
+
+table th, table td {
+    border: 1px solid #d3d3d3; /* Light border */
+    padding: 10px; /* Add padding inside cells */
+    text-align: center;
+}
+
+table th {
+    background-color: #4682b4; /* Light blue header background */
+    color: white; /* White text for headers */
+}
+
+table tr:nth-child(even) {
+    background-color: #f0f8ff; /* Very light blue for even rows */
+}
+
+table tr:nth-child(odd) {
+    background-color: #ffffff; /* White for odd rows */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #87cefa; /* Light blue footer */
+    color: black;
+    text-align: center;
+    padding: 20px; /* Add padding for inner spacing */
+    border-top: 2px solid #4682b4; /* Darker blue border at the top */
+}
+
+footer a {
+    color: black; /* Footer link color */
+    text-decoration: none;
+    margin: 0 10px; /* Add spacing between links */
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #4682b4; /* Light blue on hover */
+}

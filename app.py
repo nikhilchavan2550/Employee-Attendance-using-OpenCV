@@ -26,8 +26,11 @@ app = Flask(__name__)
 datetoday = date.today().strftime("%m_%d_%y")
 datetoday2 = date.today().strftime("%d-%B-%Y")
 
-#### Initializing VideoCapture object to access WebCam
-face_detector = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
+#face_detector = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
+face_detector = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+if face_detector.empty():
+    raise IOError("Failed to load Haar cascade XML file.")
+
 try:
     cap = cv2.VideoCapture(1)
 except:
